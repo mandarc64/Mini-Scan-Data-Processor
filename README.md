@@ -93,13 +93,4 @@ Contributions to the Mini-Scan project are welcome. Please ensure you follow the
 
 ---
 
-## License
-
-Specify the license under which the project is made available.
-
----
-
-## Contact Information
-
-For help or issues, please submit a GitHub issue or contact [Your Name].
 
