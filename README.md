@@ -27,14 +27,7 @@ The data processor subscribes to the `scan-sub` subscription, processes messages
 
 ```bash
 export PUBSUB_EMULATOR_HOST=localhost:8085
-
-## Configure the PostgreSQL Connection String in `processor.go`
-
-```go
-connStr := "postgres://username:password@localhost/dbname?sslmode=disable"
-
-# PostgreSQL Configuration and Application Instructions
-
+```
 ## Configure the PostgreSQL Connection String in `processor.go`
 
 ```go
