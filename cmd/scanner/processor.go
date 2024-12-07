@@ -56,7 +56,7 @@ func main() {
     err = sub.Receive(ctx, func(ctx context.Context, msg *pubsub.Message) {
         log.Println("Received message:", string(msg.Data))
         handleMessage(msg)
-        msg.Ack() // Acknowledge after handling the message.
+        msg.Ack()
     })
 
     if err != nil {
@@ -103,7 +103,7 @@ func handleMessage(msg *pubsub.Message) {
         return
     }
 
-    // Store data in the database
+   
     err := storeData(scan.Ip, uint32(scan.Port), scan.Service, response)
     if err != nil {
         log.Printf("Error storing data for IP %s: %v", scan.Ip, err)
